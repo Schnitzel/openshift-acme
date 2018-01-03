@@ -12,7 +12,7 @@ oc policy add-role-to-user openshift-acme --role-namespace="$(oc project --short
 If you want to deploy it directly from GitHub use:
 
 ```bash
-oc create -fhttps://raw.githubusercontent.com/tnozicka/openshift-acme/master/deploy/letsencrypt-live/single-namespace/{clusterrole,serviceaccount,imagestream,deployment}.yaml
+oc create -fhttps://raw.githubusercontent.com/tnozicka/openshift-acme/master/deploy/letsencrypt-live/single-namespace/{role,serviceaccount,imagestream,deployment}.yaml
 oc policy add-role-to-user openshift-acme --role-namespace="$(oc project --short)" -z openshift-acme
 ```
 
